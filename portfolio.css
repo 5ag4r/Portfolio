@@ -7,9 +7,17 @@
   overflow-x: hidden;
 }
 
+body {
+  background-color: rgb(233, 255, 248);
+}
+
 nav a {
   color: black;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(63, 62, 62);
 }
 
 nav span {
@@ -23,6 +31,7 @@ nav {
   align-items: center;
   padding: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.075);
+  background-color: white;
 }
 
 nav ul {
@@ -50,7 +59,6 @@ main {
 }
 
 #home_page {
-  background-color: rgb(244, 253, 250);
   height: 95vh;
   display: grid;
   grid-row: 1/2;
@@ -63,6 +71,27 @@ main {
   justify-content: center;
   align-items: center;
   padding-bottom: 40px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.social_media {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.icons {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(46, 46, 46);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
 }
 
 #home_page .image {
@@ -78,6 +107,7 @@ main {
 
 .intro-text p {
   font-size: 40px;
+  font-weight: bold;
 }
 
 .intro-text span {
@@ -140,19 +170,75 @@ main {
   }
 }
 
-.social_media {
-  margin-top: 30px;
-  display: flex;
-  gap: 20px;
+hr {
+  margin-left: 70px;
+  margin-right: 70px;
+  border: none;
+  border-top: 2px solid rgb(68, 0, 255);
 }
 
-.icons {
-  width: 45px;
-  height: 45px;
-  background-color: rgb(46, 46, 46);
-  border-radius: 50%;
+/* About page */
+
+#about_section {
+  grid-row: 2/3;
+  background-image: url("Assets/Blob.png");
+  background-size: contain; /* ensures it fills the area */
+  background-repeat: no-repeat; /* avoid tiling */
+  background-position: left;
+}
+
+/* all titles h1 designe */
+h1 {
   display: flex;
-  align-items: center;
+  gap: 10px;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  margin-top: 50px;
+}
+
+.about_me {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.about_me .information {
+  margin-right: 128px;
+  font-size: 1.25rem;
+}
+
+.information strong {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+/* education */
+
+#education_section {
+  grid-row: 3/4;
+  background-color: rgb(224, 243, 255);
+}
+
+table {
+  margin-top: 80px;
+  margin-left: 80px;
+  padding: 10px;
+  border-collapse: collapse;
+  color: black;
+  font-weight: bold;
+}
+
+tr,
+td,
+th {
+  width: 280px;
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #6250cc;
+}
+
+.row {
+  background-color: #6441ff;
+  border-bottom: 1px solid #6250cc;
 }
