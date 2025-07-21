@@ -5,6 +5,7 @@
   margin: 0;
   font-family: "poppins", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -55,7 +56,7 @@ nav ul {
 
 main {
   display: grid;
-  grid-template-rows: 90vh 90vh 90vh 90vh 90vh 90vh 90vh;
+  grid-template-rows: 90vh 90vh 90vh 100vh 90vh 90vh 90vh;
 }
 
 #home_page {
@@ -182,7 +183,7 @@ hr {
 #about_section {
   grid-row: 2/3;
   background-image: url("Assets/Blob.png");
-  background-size: contain; /* ensures it fills the area */
+  background-size: 450px; /* ensures it fills the area */
   background-repeat: no-repeat; /* avoid tiling */
   background-position: left;
 }
@@ -241,4 +242,62 @@ th {
 .row {
   background-color: #6441ff;
   border-bottom: 1px solid #6250cc;
+}
+
+/* skills */
+
+#skills_section {
+  grid-row: 4/5;
+  background: linear-gradient(to bottom right, rgb(4, 0, 255), pink);
+}
+
+.s_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_container {
+  width: 1200px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.skill_r1 {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.skill_r2 {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.skill {
+  width: 200px; /* fixed size */
+  height: 200px;
+  background-color: black;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.skill img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
