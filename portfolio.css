@@ -182,7 +182,7 @@ hr {
 
 #about_section {
   grid-row: 2/3;
-  background-image: url("Assets/Blob.png");
+  background-image: url("Assets/blob.png");
   background-size: 450px; /* ensures it fills the area */
   background-repeat: no-repeat; /* avoid tiling */
   background-position: left;
