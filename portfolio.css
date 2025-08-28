@@ -56,7 +56,7 @@ nav ul {
 
 main {
   display: grid;
-  grid-template-rows: 90vh 90vh 90vh 100vh 90vh 90vh 90vh;
+  grid-template-rows: 90vh 90vh 90vh 100vh 105vh 90vh 90vh;
 }
 
 #home_page {
@@ -264,6 +264,7 @@ th {
   border-radius: 2rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  margin-top: 20px;
 }
 
 .skill_r1 {
@@ -300,4 +301,61 @@ th {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* projects */
+
+#projects_section {
+  grid-row: 5/6;
+  background: linear-gradient(to top right, rgb(4, 0, 255), pink);
+}
+
+.p_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects_container {
+  width: 1200px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  width: 48vh;
+  height: 37vh;
+  border-radius: 5%;
+}
+
+.card_description {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4600a1;
+  color: white;
+  width: 80px;
+  height: 35px;
+  border-radius: 2.5em;
+  border: #4600a1 solid;
+}
+
+.card_button:hover {
+  cursor: pointer;
+  background-color: #4121f5;
+  border: #4121f5 solid;
 }
