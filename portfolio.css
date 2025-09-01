@@ -84,6 +84,10 @@ h2 {
   gap: 20px;
 }
 
+a {
+  text-decoration: none; /* remove underline */
+}
+
 .icons {
   width: 45px;
   height: 45px;
